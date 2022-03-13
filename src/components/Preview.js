@@ -23,9 +23,7 @@ const Preview = ({
   const { info, records } = searchResults;
   const featuredResult = setFeaturedResult;
   const isLoading = setIsLoading;
-  // console.log(isLoading, "L");
-  // console.log(featuredResult, "FR");
-  // console.log(records, "rec");
+
   /**
    * Don't touch this function, it's good to go.
    *

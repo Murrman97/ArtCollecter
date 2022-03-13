@@ -33,10 +33,8 @@ const Search = ({ setIsLoading, setSearchResults }) => {
     Promise.all([fetchAllCenturies(), fetchAllClassifications()])
       .then(([centuries, classifications]) => {
         setCenturyList(centuries);
-        // centuries.map(items =>console.log(items.name))
-        // console.log(centuries)
+
         setClassificationList(classifications);
-        // console.log(classifications)
       })
       .catch(console.error);
   }, []);
@@ -69,7 +67,7 @@ const Search = ({ setIsLoading, setSearchResults }) => {
             classification,
             queryString,
           });
-          console.log(results);
+
           setSearchResults(results);
         } catch (error) {
           console.log("Error");
@@ -123,8 +121,6 @@ const Search = ({ setIsLoading, setSearchResults }) => {
         >
           <option value="any">Any</option>
           {centuryList.map((century) => {
-            // console.log(century.name),
-            // console.log(century)
             return (
               <option key={century.id} value={century.name}>
                 {century.name}

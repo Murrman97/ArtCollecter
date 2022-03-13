@@ -42,5 +42,4 @@ const App = () => {
  * Bootstrap the <App /> component into the '#app' element in the DOM,
  * using ReactDOM.render();
  */
-// console.log(process.env.API_KEY);
 ReactDOM.render(<App />, document.getElementById("app"));
